@@ -396,7 +396,7 @@ body {
                 <div class="bg-light p-2">
                 <form method='POST'>
                 {% csrf_token %}
-                    <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="{{ request.user.profile_image.url }}" width="40">&nbsp;&nbsp;&nbsp;{{ form }}</div><br>
+                    <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="{% static 'ii.png' %}" width="40">&nbsp;&nbsp;&nbsp;{{ form }}</div><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <button class="btn btn-primary btn-block" type='submit'>Post comment</button>
                 </form>
